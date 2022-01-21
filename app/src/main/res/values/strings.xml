@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TwoDicePigGame</string>
+        <string name="rollEm">Roll</string>
+        <string name="Die1">firstDie</string>
+        <string name="Die2">secondDie</string>
+        <string name="diceRoll">Roll the Dice!</string>
+        <string name="hold">Hold</string>
+        <string name="rollD">Roll the dice!</string>
+        <string name="player1">Player 1</string>
+        <string name="player2">Player 2</string>
+        <string name="currentPlayer">Current Player</string>
+        <string name="winner">Winner!</string>
+        <string name="holdBtn">Hold</string>
+        <color name="carribeangreen">#3DDC84</color>
+</resources>

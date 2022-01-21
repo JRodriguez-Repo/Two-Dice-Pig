@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/carribeangreen"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/Die1"
+        android:src="@drawable/d1"
+        app:layout_constraintBottom_toTopOf="@+id/Roll"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="112dp"
+        android:layout_height="115dp"
+        android:contentDescription="@string/Die2"
+        android:src="@drawable/d2"
+        app:layout_constraintBottom_toTopOf="@+id/Roll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="@string/Die1"
+        android:text="@string/diceRoll"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Hold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        tools:ignore="TextContrastCheck"
+        tools:text="@string/rollD" />
+
+    <Button
+        android:id="@+id/Hold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/holdBtn"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/player1PtView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Roll"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/playerOne"
+        android:layout_width="75dp"
+        android:layout_height="72dp"
+        android:text="@string/player1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/playerTwo"
+        app:layout_constraintEnd_toStartOf="@+id/player1PtView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Hold" />
+
+
+    <TextView
+        android:id="@+id/playerTwo"
+        android:layout_width="77dp"
+        android:layout_height="72dp"
+        android:text="@string/player2"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/winner"
+        app:layout_constraintEnd_toStartOf="@+id/player2PtView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerOne" />
+
+    <TextView
+        android:id="@+id/winner"
+        android:layout_width="204dp"
+        android:layout_height="72dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerTwo" />
+
+    <TextView
+        android:id="@+id/player1PtView"
+        android:layout_width="75dp"
+        android:layout_height="68dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/player2PtView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/playerOne"
+        app:layout_constraintTop_toBottomOf="@+id/Hold" />
+
+    <TextView
+        android:id="@+id/player2PtView"
+        android:layout_width="75dp"
+        android:layout_height="68dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/winner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/playerTwo"
+        app:layout_constraintTop_toBottomOf="@+id/player1PtView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
