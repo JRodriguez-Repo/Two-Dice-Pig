@@ -1,8 +1,6 @@
 # Two-Dice-Pig
 
 There are two dice and two players competing against one another: 
- 
-If the player rolls a single 1, they score nothing, and it becomes the next player’s turn
 
 • If the player rolls both 1s, their total score is lost, and their turn ends
 
