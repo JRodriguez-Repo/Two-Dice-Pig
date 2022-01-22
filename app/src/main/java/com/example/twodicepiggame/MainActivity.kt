@@ -78,17 +78,9 @@ class MainActivity : AppCompatActivity() {
 
 
         if(player1Turn) {
-            //Rule for when a single one is rolled
-            if ((die1.equals(1) ) && (!die2.equals(1) ) || (!die1.equals(1)) && (die2.equals(1))) {
 
-                player1Score.text = player1Pts.toString()
-                player1Turn = false
-                player2Turn = true
-
-
-            }
             //Rule for when double ones are rolled
-            else if (roll == 1 && roll2 == 1) {
+            if (roll == 1 && roll2 == 1) {
 
                 player1Pts -= player1Pts
                 player1Score.text = player1Pts.toString()
@@ -115,19 +107,9 @@ class MainActivity : AppCompatActivity() {
             }
         }
         if(player2Turn) {
-            //Rule for when a single one is rolled
-            if ((die1.equals(1) ) && (!die2.equals(1) ) || (!die1.equals(1)) && (die2.equals(1))) {
 
-                player2Score.text = player2Pts.toString()
-                player2Turn = false
-                player1Turn = true
-
-
-
-
-            }
             //Rule for when double ones are rolled
-            else if (roll == 1 && roll2 == 1)  {
+            if (roll == 1 && roll2 == 1)  {
 
                 player2Pts -= player2Pts
                 player2Score.text = player2Pts.toString()

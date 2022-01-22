@@ -35,7 +35,6 @@
         android:id="@+id/Roll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="@string/Die1"
         android:text="@string/diceRoll"
         android:textAlignment="center"
         android:textSize="20sp"
